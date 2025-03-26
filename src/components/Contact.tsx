@@ -49,7 +49,7 @@ const Contact = () => {
 
               <div className="flex items-center space-x-6 pt-4">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/Zdannv"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
@@ -57,7 +57,7 @@ const Contact = () => {
                   <FiGithub className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://linkedin.com/in/zdann-v"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
