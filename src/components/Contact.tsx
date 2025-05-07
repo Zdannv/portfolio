@@ -57,7 +57,7 @@ const Contact = () => {
                   <FiGithub className="w-6 h-6" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/zdann-v"
+                  href="https://www.linkedin.com/in/muhammad-zaidan-zhafiz-satrianto-6a7511315/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
