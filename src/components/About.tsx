@@ -42,9 +42,14 @@ const About = () => {
             className="space-y-8"
           >
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              A proactive and dedicated individual with a strong foundation in informatics engineering and a genuine passion for human resources,
-              technology, and design. Driven by a commitment to education and community development, I seek to leverage my skills in a dynamic
-              environment to contribute meaningfully to organizational goals and foster innovation.
+              I am a passionate Informatics Engineering student at the Electronic Engineering Polytechnic Institute of Surabaya
+(PENS), with a strong interest in software development, computer networks, and cybersecurity. My academic
+background is complemented by active involvement in organizational activities, where I have taken on leadership
+roles, conducted technical training, and represented communities at various events.<br></br><br />
+With experience in both technical and non-technical domains, I bring strong skills in programming, public speaking,
+and team coordination. I enjoy sharing knowledge particularly in Linux, networking, and security and continuously
+seek opportunities to grow through hands-on projects and community contributions. I am eager to apply my skills and
+learn within collaborative, forward-thinking teams.
             </p>
             <div className="grid grid-cols-2 gap-4 sm:gap-6">
               <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg">

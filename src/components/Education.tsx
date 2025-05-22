@@ -9,7 +9,7 @@ const Education = () => {
     location: "Surabaya",
     period: "July 2023 - Now",
     degree: "Informatics Engineering student",
-    gpa: "3.76 / 4.00",
+    gpa: "3.68 / 4.00",
     achievements: [
       "Entered the Ranks of Top Scorers (20 out of 320 students), 89.21 / 100",
       "ITS Manifest, 3rd Place in Business Plan Competition category",
@@ -18,7 +18,7 @@ const Education = () => {
     ],
     honors: [
       "Student Company SMA Negeri 1 Waru - Vice President",
-      "Launched an F&B business during COVID-19, achieving a 250% profit margin",
+      "Launched an F&B business during COVID-19, achieving a 150% ROI (Return on Investment)",
       "3rd Runner Up Business and StartUp Competitions KEMENKEU 2022"
     ]
   }
