@@ -7,44 +7,47 @@ import Image from 'next/image'
 const Experience = () => {
   const experiences = [
     {
+      title: "Efortech Data Visualization",
+      organization: "Trainer",
+      position: "Trainer",
+      description: [
+        "Conducted training for Kediri Regional Development Planning Agency (BAPPEDA Kediri) on developing information system dashboards using Tableau."
+      ],
+      icon: FiCode,
+      image: '/images/trainer.jpg'
+    },
+    {
       title: "Open Source Community",
       organization: "Electronic Engineering Polytechnic Institute of Surabaya",
       position: "Vice President",
       description: [
-        "Help the community to active",
-        "Contribute in community discussion",
-        "Make an event for the community"
+        "Organized and led events promoting open source technologies.",
+        "Taught various topics including networking, Linux, and cybersecurity to new members.",
+        "Represented the community during Pekan Komunitas and introduced it to new students."
       ],
       icon: FiUsers,
       image: '/images/team-photo.jpg'
     },
     {
-      title: "Instructor Committee",
-      organization: "Ospek Jurusan teknik informatika",
-      position: "Committee Member",
+      title: "Ospek Jurusan",
+      organization: "Informatics Engineering & Data Science 2023",
+      position: "Officer Liaison",
       description: [
-        "Electronic Engineering Polytechnic Institute of Surabaya"
+        "Served as the primary point of contact between the orientation committee and academic instructors.",
+        "Coordinated schedules, communication, and event logistics involving faculty participation.",
+        "Ensured smooth collaboration and alignment between the committee's agenda and academic requirements during the department orientation program."
       ],
       icon: FiBriefcase
     },
     {
-      title: "Marketing Team",
-      organization: "Cleanova",
-      position: "Team Member",
+      title: "Student Company",
+      organization: "SMA Negeri 1 Waru",
+      position: "Vice President",
       description: [
-        "Part of the marketing team"
+        "Launched an F&B business during COVID-19, achieving a 150% ROI (Return on Investment)",
+        "Helped expand the organization to become more recognized and appreciated by the school."
       ],
-      icon: FiCode
-    },
-    {
-      title: "Cyber Security Competitions",
-      organization: "Various Competitions",
-      position: "Participant",
-      description: [
-        "Participant in Cyber Security competition (capture the flag) compfest, gemastik",
-        "32 besar Cyber Security competition (capture the flag) Technofair"
-      ],
-      icon: FiShield
+      icon: FiBriefcase
     }
   ]
 

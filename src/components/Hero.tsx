@@ -78,7 +78,7 @@ const Hero = () => {
             
             <div className="absolute -bottom-6 -right-6 flex gap-4 bg-white dark:bg-gray-800 p-4 rounded-2xl shadow-lg">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/Zdannv"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
@@ -86,7 +86,7 @@ const Hero = () => {
                 <FiGithub className="w-6 h-6" />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/muhammad-zaidan-zhafiz-satrianto-6a7511315/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"

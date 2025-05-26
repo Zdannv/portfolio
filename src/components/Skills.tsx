@@ -5,24 +5,28 @@ import { FiCode, FiGlobe, FiMessageSquare } from 'react-icons/fi'
 
 const Skills = () => {
   const technicalSkills = [
-    { name: "C, C++, JAVA", level: "Intermediate" },
-    { name: "Flutter, Laravel, Next JS, React", level: "Intermediate" },
-    { name: "Python", level: "Intermediate" },
-    { name: "Data Visualization with Tableau", level: "Intermediate" },
-    { name: "Video Editing", level: "Intermediate" },
-    { name: "Computer Network Skills", level: "Intermediate" },
-    { name: "Design & UI/UX", level: "Advanced" },
-    { name: "Cyber Security", level: "Intermediate" },
-    { name: "Frontend Development", level: "Advanced" }
+    { name: "Mobile Developer (Flutter, Java, Kotlin)", level: "Intermediate" },
+    { name: "Computer Network (IP Addressing, Subnetting, Security, Routing)", level: "Intermediate" },
+    { name: "Web Developer (HTML, CSS, JavaScript, TypeScript, Tailwind CSS, React, Next.js)", level: "Intermediate" },
+    { name: "Design & UI/UX", level: "Intermediate" },
+    { name: "Cyber Security", level: "Intermediate" }
   ]
 
   const languages = [
-    { name: "English", level: "Intermediate" },
+    { name: "Bahasa Indonesia", level: "Native" },
+    { name: "English", level: "Intermediate (TOEFL 590)" },
     { name: "Japanese", level: "Beginner" }
   ]
 
   const otherSkills = [
-    "Advance Speech and Presentation"
+    "Leadership",
+    "Communication",
+    "Public Speaking",
+    "Problem Solving",
+    "Critical Thinking",
+    "Adaptability",
+    "Creativity",
+    "Music and Art"
   ]
 
   return (

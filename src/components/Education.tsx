@@ -3,23 +3,37 @@
 import { motion } from 'framer-motion'
 import { FiAward, FiTarget } from 'react-icons/fi'
 
+interface School {
+  name: string;
+  location: string;
+  period: string;
+  degree?: string;
+  gpa?: string;
+  transcript?: string;
+}
+
 const Education = () => {
   const education = {
-    school: "Electronic Engineering Polytechnic Institute of Surabaya",
-    location: "Surabaya",
-    period: "July 2023 - Now",
-    degree: "Informatics Engineering student",
-    gpa: "3.68 / 4.00",
+    schools: [
+      {
+        name: "Electronic Engineering Polytechnic Institute of Surabaya",
+        location: "Surabaya",
+        period: "July 2023 - Now",
+        degree: "Informatics Engineering student",
+        gpa: "3.68 / 4.00",
+        transcript: "Transkip_zaidan.pdf"
+      }
+    ] as School[],
     achievements: [
-      "Entered the Ranks of Top Scorers (20 out of 320 students), 89.21 / 100",
-      "ITS Manifest, 3rd Place in Business Plan Competition category",
-      "ITS Schematics, National Logic Competition Top 16 out of 1000++ participants",
-      "Top 5 Duta Pelajar Putra, JawaPos SMA Award 2023"
-    ],
-    honors: [
-      "Student Company SMA Negeri 1 Waru - Vice President",
-      "Launched an F&B business during COVID-19, achieving a 150% ROI (Return on Investment)",
-      "3rd Runner Up Business and StartUp Competitions KEMENKEU 2022"
+      "3rd Winner – JA Titan Business Competition, Prestasi Junior Indonesia",
+      "Harapan 3 – Business and Startup Competition, KEMENKEU 2022",
+      "Top 16 – ITS Schematics National Logic Competition",
+      "Top 5 Finalist – Duta Pelajar Putra, JawaPos SMA Awards 2023",
+      "Gemastik 2024 – Cyber Security CTF",
+      "Compfest 2024 – Cyber Security CTF",
+      "Technofair 2024 – Capture The Flag",
+      "DTS TSA Cyber Champion 2024 – CTF",
+      "Fasilkom UI/UX Competition 2024"
     ]
   }
 
@@ -42,42 +56,44 @@ const Education = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto"
+          className="max-w-4xl mx-auto space-y-8"
         >
+          {education.schools.map((school, index) => (
+            <div key={index} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{school.name}</h3>
+                <p className="text-gray-600 dark:text-gray-300">{school.location} | {school.period}</p>
+              </div>
+
+              {school.degree && (
+                <div className="mb-6">
+                  <p className="text-lg text-gray-700 dark:text-gray-200 mb-2">{school.degree}</p>
+                  {school.gpa && <p className="text-gray-600 dark:text-gray-300">Current GPA: {school.gpa}</p>}
+                  {school.transcript && (
+                    <a 
+                      href={school.transcript}
+                      className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      View Transcript
+                    </a>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
+
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-            <div className="mb-6">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{education.school}</h3>
-              <p className="text-gray-600 dark:text-gray-300">{education.location} | {education.period}</p>
-            </div>
-
-            <div className="mb-6">
-              <p className="text-lg text-gray-700 dark:text-gray-200 mb-2">{education.degree}</p>
-              <p className="text-gray-600 dark:text-gray-300">Current GPA: {education.gpa}</p>
-            </div>
-
-            <div className="mb-6">
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
-                <FiAward className="mr-2" />
-                Academic Achievements
-              </h4>
-              <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
-                {education.achievements.map((achievement, index) => (
-                  <li key={index}>{achievement}</li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
-                <FiTarget className="mr-2" />
-                Honors & Awards
-              </h4>
-              <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
-                {education.honors.map((honor, index) => (
-                  <li key={index}>{honor}</li>
-                ))}
-              </ul>
-            </div>
+            <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 flex items-center">
+              <FiAward className="mr-2" />
+              Achievements & Competitions
+            </h4>
+            <ul className="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+              {education.achievements.map((achievement, index) => (
+                <li key={index}>{achievement}</li>
+              ))}
+            </ul>
           </div>
         </motion.div>
       </div>
